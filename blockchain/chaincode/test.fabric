@@ -1,0 +1,63 @@
+[
+    {
+        // userID string, traceability_code string, arg1 string, arg2 string, arg3 string, arg4 string, arg5 string
+        "invoke": "Uplink",
+        // 摄影记者上链新闻图片信息
+        "args": ["1", "newsImageTraceCode1", "重大体育赛事新闻", "体育场A区", "2025-02-20 14:30:00", "摄影师李华", ""]
+    },
+    {
+        "invoke": "Uplink",
+        // 媒体机构上链新闻图片信息
+        "args": ["2", "newsImageTraceCode1", "赛事精彩瞬间报道", "2025022001", "2025-02-20 16:00:00", "XX新闻媒体", "010-12345678"]
+    },
+    {
+        "invoke": "Uplink",
+        // 转发者上链新闻图片信息
+        "args": ["3", "newsImageTraceCode1", "张三", "13800138000", "从XX新闻媒体转发到社交平台X", "", ""]
+    },
+    {
+        "invoke": "Uplink",
+        // 发布平台上链新闻图片信息
+        "args": ["4", "newsImageTraceCode1", "2025-02-20 18:00:00", "2025-02-20 20:00:00", "社交平台X", "平台服务器地址A", "020-87654321"]
+    },
+    {
+        "invoke": "RegisterUser",
+        // 注册摄影记者用户
+        "args": ["1", "摄影记者", "hash123456"]
+    },
+    {
+        "invoke": "RegisterUser",
+        // 注册媒体机构用户
+        "args": ["2", "媒体机构", "hash789012"]
+    },
+    {
+        "invoke": "RegisterUser",
+        // 注册转发者用户
+        "args": ["3", "转发者", "hash345678"]
+    },
+    {
+        "invoke": "RegisterUser",
+        // 注册发布平台用户
+        "args": ["4", "发布平台", "hash901234"]
+    },
+    {
+        "invoke": "GetUserType",
+        "args": ["2"]
+    },
+    {
+        "invoke": "GetUserInfo",
+        "args": ["2"]
+    },
+    {
+        "invoke": "GetNewsImageList",
+        "args": ["2"]
+    },
+    {
+        "invoke": "GetNewsImageInfo",
+        "args": ["newsImageTraceCode1"]
+    },
+    {
+        "invoke": "GetNewsImageHistory",
+        "args": ["newsImageTraceCode1"]
+    }
+]
